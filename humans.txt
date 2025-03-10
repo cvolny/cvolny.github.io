@@ -1,0 +1,11 @@
+/* Developers */
+    Frau Cupcake C. Volny
+    Location: Leipzig, Germany
+    Github: https://www.github.com/cvolny
+    LinkedIn: https://www.linkedin.com/in/cvolny
+    Social: https://cupcake.rip/
+
+/* Site */
+    Language: English
+    Doctype: HTML5
+    Tooling: HTML5, CSS, Bootstrap5.3, react, react-bootstrap, react-router-dom, gh-pages, Visual Studio Code, nano, git, npm
