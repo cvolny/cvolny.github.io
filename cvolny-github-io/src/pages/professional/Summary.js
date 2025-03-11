@@ -1,8 +1,8 @@
-const Social = () => {
+const Summary = () => {
     return (
       <div className="container pt-4">
         <header className="h1">
-          Social
+          Professional Summary
         </header>
 
         <div id="brief" className="my-3">
@@ -12,4 +12,4 @@ const Social = () => {
     );
   };
 
-  export default Social;
+  export default Summary;

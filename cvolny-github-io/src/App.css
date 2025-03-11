@@ -40,3 +40,26 @@
 .nav-logo {
   height: 48px;
 }
+
+.list-group-bulleted {
+  list-style-type: disc;
+  padding-left: 1em;
+}
+
+.list-group-bulleted>.list-group-item {
+  display: list-item;
+  padding-left: 0;
+  margin-left: 1em;
+}
+
+.list-group.list-group-horizontal.list-group-flush>.list-group-item {
+  border: 0;
+}
+
+.accordion-nostyle>h2>button.accordion-button {
+  padding: 0;
+  background: none !important;
+  box-shadow: none;
+  width: inherit !important;
+  padding-right: 2em;
+}

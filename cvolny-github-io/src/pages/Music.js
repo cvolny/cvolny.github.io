@@ -1,11 +1,11 @@
 const Music = () => {
     return (
-      <div class="container pt-4">
-        <header class="h1">
+      <div className="container pt-4">
+        <header className="h1">
           Music
         </header>
 
-        <div id="brief" class="my-3">
+        <div id="brief" className="my-3">
           <p>This is a placeholder.</p>
         </div>
       </div>
