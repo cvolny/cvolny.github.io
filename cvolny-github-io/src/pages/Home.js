@@ -13,7 +13,7 @@ const Home = () => {
 
         <div id="about" className="my-3">
           <p>Cupcake is a life-long student (polymath) with a diverse history of student, community, and political
-            involvement, an electronic musician / producer, a digital effects and photographic artist, and finally a career
+            involvement; an electronic musician / producer; a digital effects and photography artist; and finally a career
             security engineer with strong opinions on effective design and maintainable architecture.</p>
         </div>
       </div>
