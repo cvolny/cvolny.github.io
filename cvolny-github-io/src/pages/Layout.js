@@ -17,17 +17,17 @@ const Layout = () => {
               <li className="nav-item dropdown">
                 <button className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Professional</button>
                 <ul className="dropdown-menu dropdown-menu-dark">
-                  <li><NavLink to="/professional/" className="nav-link">Summary</NavLink></li>
+                  {/* <li><NavLink to="/professional/" className="nav-link">Summary</NavLink></li> */}
                   <li><NavLink to="/professional/talks_and_projects" className="nav-link">Talks and Projects</NavLink></li>
-                  <li><NavLink to="/professional/career" className="nav-link">Career</NavLink></li>
+                  {/* <li><NavLink to="/professional/career" className="nav-link">Career</NavLink></li> */}
                 </ul>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink to="/social" className="nav-link">Social</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink to="/music" className="nav-link">Music</NavLink>
-              </li>
+              </li> */}
             </ul>
           </div>
           <ul className="navbar-nav">
