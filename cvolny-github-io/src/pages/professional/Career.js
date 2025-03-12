@@ -1,8 +1,8 @@
 const Career = () => {
     return (
       <div className="container pt-4">
-        <header className="h1">
-            Career
+        <header>
+            <h1>Career</h1>
         </header>
 
         <div id="brief" className="my-3">

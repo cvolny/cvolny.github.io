@@ -1,8 +1,8 @@
-const Summary = () => {
+const ProfessionalSummary = () => {
     return (
       <div className="container pt-4">
-        <header className="h1">
-          Professional Summary
+        <header>
+          <h1>Professional Summary</h1>
         </header>
 
         <div id="brief" className="my-3">
@@ -12,4 +12,4 @@ const Summary = () => {
     );
   };
 
-  export default Summary;
+  export default ProfessionalSummary;

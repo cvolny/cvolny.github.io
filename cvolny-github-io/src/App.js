@@ -1,13 +1,19 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
-import NoPage from "./pages/NoPage";
 import Home from "./pages/Home";
-import Summary from "./pages/professional/Summary";
-import TalksAndProjects from "./pages/professional/TalksAndProjects";
-import Career from "./pages/professional/Career";
-import Social from "./pages/Social";
-import Music from "./pages/Music";
+import ProfessionalSummary from "./pages/professional/Summary";
+import TalksAndPublications from "./pages/professional/TalksAndPublications";
+import Projects from "./pages/professional/Projects";
+// import Career from "./pages/professional/Career";
+import SocialSummary from "./pages/social/Summary";
+// import Burning from "./pages/social/Burning";
+// import Queer from "./pages/social/Queer";
+import MusicSummary from "./pages/music/Summary";
+// import Synthesizers from "./pages/music/Synthesizers";
+// import Production from "./pages/music/Production";
+// import Precussion from "./pages/music/Precussion";
+import NoPage from "./pages/NoPage";
 
 
 export default function App() {
@@ -17,12 +23,12 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/professional">
-            <Route index element={<Summary />} />
-            <Route path="talks_and_projects" element={<TalksAndProjects />} />
-            <Route path="career" element={<Career />} />
+            <Route index element={<ProfessionalSummary />} />
+            <Route path="talks_and_publications" element={<TalksAndPublications />} />
+            <Route path="projects" element={<Projects />} />
           </Route>
-          <Route path="/social" element={<Social />} />
-          <Route path="/music" element={<Music />} />
+          <Route path="/social" element={<SocialSummary />} />
+          <Route path="/music" element={<MusicSummary />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

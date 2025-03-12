@@ -1,54 +1,42 @@
-import { Outlet, NavLink } from "react-router-dom";
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Outlet } from "react-router-dom";
 import "../App.css"
 
 const Layout = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <div className="container-fluid">
-          <div className="d-flex justify-content-start align-items-center">
-            <a className="navbar-brand" href="/">
-              <img src="/img/cvolny-avatar.png" alt="Avatar for Cupcake Volny" className="rounded-pill nav-logo" />
-            </a>
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <NavLink to="/" className="nav-link">Home</NavLink>
-              </li>
-              <li className="nav-item dropdown">
-                <button className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Professional</button>
-                <ul className="dropdown-menu dropdown-menu-dark">
-                  {/* <li><NavLink to="/professional/" className="nav-link">Summary</NavLink></li> */}
-                  <li><NavLink to="/professional/talks_and_projects" className="nav-link">Talks and Projects</NavLink></li>
-                  {/* <li><NavLink to="/professional/career" className="nav-link">Career</NavLink></li> */}
-                </ul>
-              </li>
-              {/* <li className="nav-item">
-                <NavLink to="/social" className="nav-link">Social</NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/music" className="nav-link">Music</NavLink>
-              </li> */}
-            </ul>
-          </div>
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link" href="https://www.github.com/cvolny" target="_blank" rel="noreferrer">
-                <img src="/img/logo-github.png" alt="find cvolny on github" className="nav-logo" />
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="https://www.linkedin.com/in/cvolny" target="_blank" rel="noreferrer">
-                <img src="/img/logo-linkedin.png" alt="find cvolny on LinkedIn" className="nav-logo" />
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="https://soundcloud.com/0xcupcake" target="_blank" rel="noreferrer">
-                <img src="/img/logo-soundcloud.png" alt="find 0xCupcake on soundcloud" className="nav-logo" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <Navbar bg="dark" data-bs-theme="dark" sticky="top" expand="sm" collapseOnSelect className="px-3">
+        <Navbar.Brand href="/">
+          <img src="/img/cvolny-avatar.png" alt="Avatar for Cupcake Volny" className="rounded-pill nav-logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <NavDropdown title="Professional">
+              <NavDropdown.Item href="/professional/talks_and_publications">
+                Talks and Publications
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/professional/projects">
+                Projects
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          <Nav>
+            <Nav.Link href="https://www.github.com/cvolny">
+              <img src="/img/logo-github.png" alt="find cvolny on github" className="nav-logo" />
+            </Nav.Link>
+            <Nav.Link href="https://www.linkedin.com/in/cvolny">
+              <img src="/img/logo-linkedin.png" alt="find cvolny on LinkedIn" className="nav-logo" />
+            </Nav.Link>
+            <Nav.Link href="https://soundcloud.com/0xcupcake">
+              <img src="/img/logo-soundcloud.png" alt="find 0xCupcake on soundcloud" className="nav-logo" />
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
 
       <Outlet />
     </>

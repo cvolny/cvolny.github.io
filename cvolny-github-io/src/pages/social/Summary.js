@@ -1,8 +1,8 @@
-const Music = () => {
+const SocialSummary = () => {
     return (
       <div className="container pt-4">
-        <header className="h1">
-          Music
+        <header>
+          <h1>Social</h1>
         </header>
 
         <div id="brief" className="my-3">
@@ -12,4 +12,4 @@ const Music = () => {
     );
   };
 
-  export default Music;
+  export default SocialSummary;

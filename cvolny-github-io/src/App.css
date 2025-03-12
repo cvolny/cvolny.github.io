@@ -56,10 +56,38 @@
   border: 0;
 }
 
-.accordion-nostyle>h2>button.accordion-button {
-  padding: 0;
-  background: none !important;
-  box-shadow: none;
-  width: inherit !important;
-  padding-right: 2em;
+#hello-world-kbd .typed-cursor.typed-cursor--blink {
+  animation: typedjsBlink 1.5s infinite;
+}
+
+.duo-quote {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.1rem;
+  color: rgb(54, 63, 68);
+  font-weight: 400;
+}
+
+.lightbox-modal .modal-footer {
+  justify-content: space-between !important;
+}
+
+@keyframes highlightText {
+  0% {
+    background: none;
+  }
+
+  50% {
+    background: #dd0;
+  }
+
+  100% {
+    background: none;
+  }
+}
+
+.highlightable:target {
+  animation: highlightText 2.5s;
 }
