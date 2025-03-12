@@ -148,7 +148,7 @@ const TalksAndPublications = () => {
           <p>
             Many of these talks reference or discuss some of my larger projects.
             If you're interested in seeing the source code or technical descriptions of those work,
-            check those out on the <a href="/professional/projects">Projects</a> page!
+            check those out on the <a href="#/professional/projects">Projects</a> page!
           </p>
         </div>
       </div>
