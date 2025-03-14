@@ -16,10 +16,10 @@ const Layout = () => {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="Professional">
-              <NavDropdown.Item href="#/professional/talks_and_publications">
+              <NavDropdown.Item href="/professional/talks_and_publications">
                 Talks and Publications
               </NavDropdown.Item>
-              <NavDropdown.Item href="#/professional/projects">
+              <NavDropdown.Item href="/professional/projects">
                 Projects
               </NavDropdown.Item>
             </NavDropdown>
