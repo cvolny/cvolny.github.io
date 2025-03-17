@@ -26,6 +26,7 @@ const LightboxImage = ({srcThumb, srcFullsize, altText, children}) => {
       onClick={() => setModalShow(true)}
       className="border-0"
       variant="link"
+      title={altText}
     >
       <Image
         thumbnail
