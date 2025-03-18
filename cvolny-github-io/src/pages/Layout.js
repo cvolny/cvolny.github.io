@@ -16,6 +16,9 @@ const Layout = () => {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="Professional">
+              <NavDropdown.Item href="/professional/">
+                Summary
+              </NavDropdown.Item>
               <NavDropdown.Item href="/professional/talks_and_publications">
                 Talks and Publications
               </NavDropdown.Item>

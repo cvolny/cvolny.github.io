@@ -7,7 +7,7 @@ import { ExternalLink, LightboxImage } from '../../Util';
 
 const TalksAndPublications = () => {
     return (
-      <div className="container pt-4">
+      <Container className="pt-4">
         <header>
             <h1>Talks and Publications</h1>
         </header>
@@ -19,8 +19,8 @@ const TalksAndPublications = () => {
         <Container id="publications" className="my-3">
           <h2>Publications</h2>
           <Row>
-            <Col xs="12" md="8">
-              <ListGroup className="list-group-bulleted list-group-flush">
+            <Col xs={12} md={8}>
+              <ListGroup className="list-group-bulleted list-group-flush item-ml-1">
                 <ListGroup.Item>
                   <ExternalLink href="https://duo.com/blog/building-inclusive-culture-empowered-lgbtq-plus-future">
                     Pride and Processes: Building an Inclusive Culture and an Empowered LGBTQ+ Future
@@ -33,7 +33,7 @@ const TalksAndPublications = () => {
                 </ListGroup.Item>
               </ListGroup>
             </Col>
-            <Col xs="12" md="4" className="container my-2">
+            <Col xs={12} md={4} className="container my-2">
               <Row>
                 <Col xs="1">
                   <svg
@@ -65,8 +65,8 @@ const TalksAndPublications = () => {
         <Container id="talks" className="my-3">
           <h2>Talks</h2>
           <Row>
-            <Col xs="12" md="9">
-              <ListGroup className="list-group-bulleted list-group-flush">
+            <Col xs={12} md="9">
+              <ListGroup className="list-group-bulleted list-group-flush item-ml-1">
               <ListGroup.Item>
                 <ExternalLink
                   href="https://penguicon2023.sched.com/event/1KZdW"
@@ -124,7 +124,7 @@ const TalksAndPublications = () => {
               </ListGroup.Item>
               </ListGroup>
             </Col>
-            <Col xs="12" md="3">
+            <Col xs={12} md={3}>
               <LightboxImage
                 srcThumb="/pages/professional/talks_and_publications/python-at-enterprise-scale-slide-small.png"
                 srcFullsize="/pages/professional/talks_and_publications/python-at-enterprise-scale-slide.png"
@@ -151,7 +151,7 @@ const TalksAndPublications = () => {
             check those out on the <a href="#/professional/projects">Projects</a> page!
           </p>
         </div>
-      </div>
+      </Container>
     );
   };
 

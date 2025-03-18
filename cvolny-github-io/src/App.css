@@ -49,9 +49,16 @@
 .list-group-bulleted>.list-group-item {
   display: list-item;
   padding-left: 0;
+}
+
+.list-group-bulleted.item-ml-1>.list-group-item {
   margin-left: 1em;
 }
 
+.list-group-bulleted.item-border-none>.list-group-item {
+  border: 0;
+  padding-bottom: 0;
+}
 .list-group.list-group-horizontal.list-group-flush>.list-group-item {
   border: 0;
 }

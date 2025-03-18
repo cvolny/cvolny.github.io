@@ -1,11 +1,11 @@
+import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import { ExternalLink, LightboxImage } from '../../Util';
 import Row from 'react-bootstrap/esm/Row';
-import Container from 'react-bootstrap/esm/Container';
 
 const Projects = () => {
     return (
-      <div className="container pt-4">
+      <Container className="pt-4">
         <header>
             <h1>Projects</h1>
         </header>
@@ -16,7 +16,7 @@ const Projects = () => {
             <small>(React on GitHub Pages)</small>
           </h2>
           <Row>
-            <Col xs="12" md="8" className="project-description">
+            <Col xs={12} md={8} className="project-description">
               <p>
                 This is my living portfolio site to showcase some of my professional, musical, and social
                 work from the last few years. I don't / can't use this to talk about all of the work I've
@@ -32,7 +32,7 @@ const Projects = () => {
                 npm ghpages module</ExternalLink> to make things extra easy.
               </p>
             </Col>
-            <Col xs="12" md="4">
+            <Col xs={12} md={4}>
               <LightboxImage
                 srcThumb="/pages/professional/projects/thevolny-net-ghpages-small.png"
                 srcFullsize="/pages/professional/projects/thevolny-net-ghpages.png"
@@ -54,7 +54,7 @@ const Projects = () => {
             <small>(Django RestFramework + WebAuthn)</small>
           </h2>
           <Row>
-            <Col xs="12" md="8" className="project-description">
+            <Col xs={12} md={8} className="project-description">
               <p>
                 This Django module was a proof-of-concept of implementing the FIDO2 Web Authentication (WebAuthn) schema from
                 specification into the Django Python Web Framework as part of my term project in a graduate-level Cyber-Security
@@ -73,7 +73,7 @@ const Projects = () => {
                 is discussed further in my Ohio LinuxFest talk under Design Considerations.
               </p>
             </Col>
-            <Col xs="12" md="4">
+            <Col xs={12} md={4}>
               <LightboxImage
                 srcThumb="/pages/professional/projects/django-restauthn-api-view-small.png"
                 srcFullsize="/pages/professional/projects/django-restauthn-api-view.png"
@@ -94,7 +94,7 @@ const Projects = () => {
             <small>(with CBOR Transport Encoding)</small>
           </h2>
           <Row>
-            <Col xs="12" md="8" className="project-description">
+            <Col xs={12} md={8} className="project-description">
               <p>
                 This is the frontend-half of my Cyber-Security term project to connect a React SPA (REST client)
                 to the backend-half, Django RestAuthn. This is written as vanilla Javascript that uses CBOR
@@ -109,7 +109,7 @@ const Projects = () => {
                 part of a MFA scheme (you choose how secure you want your app to be).
               </p>
             </Col>
-            <Col xs="12" md="4">
+            <Col xs={12} md={4}>
               <LightboxImage
                 srcThumb="/pages/professional/projects/npm-webauthn-client-code-small.png"
                 srcFullsize="/pages/professional/projects/npm-webauthn-client-code.png"
@@ -130,7 +130,7 @@ const Projects = () => {
             <small>(recommendations to counteract "filter bubbles")</small>
           </h2>
           <Row>
-            <Col xs="12" md="8" className="project-description">
+            <Col xs={12} md={8} className="project-description">
               <p>
                 This is the initial research work that was later refined into my first journal publication:
                 <ExternalLink href="https://link.springer.com/chapter/10.1007/978-3-031-17114-7_15">
@@ -153,7 +153,7 @@ const Projects = () => {
                 in the course and generated some work that could be refined into a publication!
               </p>
             </Col>
-            <Col xs="12" md="4">
+            <Col xs={12} md={4}>
               <LightboxImage
                 srcThumb="/pages/professional/projects/infonet-politics-graphs-small.png"
                 srcFullsize="/pages/professional/projects/infonet-politics-graphs.png"
@@ -177,7 +177,7 @@ const Projects = () => {
             href="https://github.com/cvolny?tab=repositories">on GitHub</ExternalLink>!
           </p>
         </Container>
-      </div>
+      </Container>
     );
   };
 

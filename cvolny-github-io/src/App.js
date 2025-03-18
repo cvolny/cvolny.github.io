@@ -2,10 +2,9 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import ProfessionalSummary from "./pages/professional/Summary";
 import TalksAndPublications from "./pages/professional/TalksAndPublications";
 import Projects from "./pages/professional/Projects";
-// import Career from "./pages/professional/Career";
+import Career from "./pages/professional/Career";
 import SocialSummary from "./pages/social/Summary";
 // import Burning from "./pages/social/Burning";
 // import Queer from "./pages/social/Queer";
@@ -23,7 +22,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/professional">
-            <Route index element={<ProfessionalSummary />} />
+            <Route index element={<Career />} />
             <Route path="talks_and_publications" element={<TalksAndPublications />} />
             <Route path="projects" element={<Projects />} />
           </Route>

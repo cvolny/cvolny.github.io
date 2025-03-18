@@ -26,9 +26,9 @@ const Home = () => {
   return (
     <Container className="pt-4">
       <Row>
-        <Col xs="12" md="8">
+        <Col xs={12} md={8}>
           <header>
-            <h1>Cupcake Christi Volny <small>(she/her)</small></h1>
+            <h1>Cupcake C. Volny <small>(she/her)</small></h1>
           </header>
           <div className="alert alert-light m-5 border p-3">
             <kbd className="h3 text-white" id="hello-world-kbd">
@@ -53,7 +53,7 @@ const Home = () => {
               security engineer with strong opinions on effective design and maintainable architecture.</p>
           </div>
         </Col>
-        <Col xs="12" md="4">
+        <Col xs={12} md={4}>
           <Image
             thumbnail
             src="/pages/cvolny-avatar-pink.jpg"
